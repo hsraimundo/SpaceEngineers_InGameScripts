@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IngameScripts\BatteryStatus.cs" />
+    <Compile Include="IngameScripts\ReactorStatus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgrammableBlockInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

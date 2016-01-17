@@ -11,7 +11,6 @@ namespace SpaceEngineers_InGameScripts
     {
         static public void Main(string[] args)
         {
-            IMyBatteryBlock battery = new MyBatteryBlock();
             //for the sake of compilation - useful for ad-hoc testing as well
         }
     }

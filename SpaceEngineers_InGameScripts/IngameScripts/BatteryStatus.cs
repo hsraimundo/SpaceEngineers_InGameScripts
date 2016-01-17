@@ -12,7 +12,7 @@ namespace SpaceEngineersScripts.InGame
         public override void Main(string argument)
         {
             //get all batteries
-            List<IMyTerminalBlock> batteries = new List<IMyTerminalBlock>();
+            var batteries = new List<IMyTerminalBlock>();
             GridTerminalSystem.GetBlocksOfType<IMyBatteryBlock>(batteries);
 
             //get the lcd configured in the argument
@@ -30,9 +30,9 @@ namespace SpaceEngineersScripts.InGame
                     );
                 
                 var maxStoredPower = match.Groups["power"].Value;
-                var maxStoredPowerMultiplier = (match.Groups["scale"].Value == "M") ? 1000000 : (match.Groups["scale"].Value == "M") ? 1000 : 1;
+                var maxStoredPowerMultiplier = (match.Groups["scale"].Value == "M") ? 1000000 : (match.Groups["scale"].Value == "k") ? 1000 : 1;
                 var storedPower = match.Groups["power2"].Value;
-                var storedPowerMultiplier = (match.Groups["scale2"].Value == "M") ? 1000000 : (match.Groups["scale2"].Value == "M") ? 1000 : 1;
+                var storedPowerMultiplier = (match.Groups["scale2"].Value == "M") ? 1000000 : (match.Groups["scale2"].Value == "k") ? 1000 : 1;
 
                 double d1 = 0, d2 = 0;
                 double.TryParse(storedPower, out d1);
