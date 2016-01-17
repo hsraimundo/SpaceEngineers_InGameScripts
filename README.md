@@ -24,7 +24,8 @@ public class BatteryStatusScript : ProgrammableBlockInterface
 ```
 
 Useful links for programming:
-https://steamcommunity.com/sharedfiles/filedetails/?id=368216440
-http://www.spaceengineerswiki.com/Programming
-http://steamcommunity.com/sharedfiles/filedetails/?id=360966557
-http://www.spaceengineerswiki.com/Programmable_Block
+
+* https://steamcommunity.com/sharedfiles/filedetails/?id=368216440
+* http://www.spaceengineerswiki.com/Programming
+* http://steamcommunity.com/sharedfiles/filedetails/?id=360966557
+* http://www.spaceengineerswiki.com/Programmable_Block
