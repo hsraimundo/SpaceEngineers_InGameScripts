@@ -1,21 +1,9 @@
-﻿using Sandbox.ModAPI;
+﻿using System;
+using Sandbox.ModAPI;
 using Sandbox.ModAPI.Ingame;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SpaceEngineers_InGameScripts
+namespace SpaceEngineersScripts
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            //main method for... nothing?
-        }
-    }
-
     public abstract class ProgrammableBlockInterface : IMyGridProgram
     {
         #region IMygridProgram
@@ -112,21 +100,5 @@ namespace SpaceEngineers_InGameScripts
         #endregion
 
         abstract public void Main(string argument);
-    }
-
-    public class BatteryStatusScript : ProgrammableBlockInterface
-    {
-        public override void Main(string argument)
-        {
-            //all the code you want here...
-
-            //access to the persistent string storage
-            Storage = "Storage";
-
-            //access to the current block
-            Me.SetCustomName("new custom name");
-
-            //...
-        }
     }
 }
