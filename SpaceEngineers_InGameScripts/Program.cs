@@ -118,7 +118,15 @@ namespace SpaceEngineers_InGameScripts
     {
         public override void Main(string argument)
         {
-            throw new NotImplementedException();
+            //all the code you want here...
+
+            //access to the persistent string storage
+            Storage = "Storage";
+
+            //access to the current block
+            Me.SetCustomName("new custom name");
+
+            //...
         }
     }
 }
