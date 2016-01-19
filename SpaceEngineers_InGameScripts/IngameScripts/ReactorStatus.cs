@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace SpaceEngineers_InGameScripts.IngameScripts
 {
-    public class ReactorStatus : ProgrammableBlockInterface
+    public class ReactorStatus : MyGridProgram
     {
-        public override void Main(string argument)
+        public void Main(string argument)
         {
             //get all reactors
             var reactors = new List<IMyTerminalBlock>();

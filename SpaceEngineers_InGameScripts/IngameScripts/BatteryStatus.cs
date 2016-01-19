@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace SpaceEngineersScripts.InGame
 {
-    public class BatteryStatus : ProgrammableBlockInterface
+    public class BatteryStatus : MyGridProgram
     {
-        public override void Main(string argument)
+        public void Main(string argument)
         {
             //get all batteries
             var batteries = new List<IMyTerminalBlock>();
